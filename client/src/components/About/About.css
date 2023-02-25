@@ -1,0 +1,100 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+.farm{
+    /* margin-top: 0px; */
+       display: flex;
+        flex-direction: column;
+        width: 500px;
+        /* margin: auto; */
+        /* margin-top:400px; */
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+}
+
+.wrapper{
+    padding:50px 25px 0;
+    max-width:668px;
+    width:100%;
+    margin:auto;
+}
+.wrapper::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    z-index: -1;
+}
+.wrapper .headline{
+    text-align: center;
+    padding-bottom:48px;
+}
+.wrapper .headline h1{
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 52px;
+}
+.wrapper .form{
+    max-width:350px;
+    width:100%;
+    margin:auto;
+}
+.wrapper .form-group{
+    margin-bottom: 15px;
+}
+.wrapper .form-group input{
+    display:block;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    padding:11px 15px;
+    height:48px;
+    border-radius: 5px;
+    color:var(--black-color);
+    border:1px solid #e4e8ee;
+    box-shadow: none;
+    width:100%;
+}
+.wrapper .form-group input:focus{
+    outline:none;
+}
+.wrapper .form-group input::placeholder{
+    color:var(--black-color);
+    font-weight: 400;
+    font-size: 14px;
+}
+.wrapper .btn{
+    width:100%;
+    margin:15px 0 30px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
+    padding:12px 29px;
+    height:48px;
+    text-transform: uppercase;
+    color:red;
+    background-color: white;
+    border:none;
+    cursor: pointer;
+    text-align: center;
+  box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
+    2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080;
+ border-radius: 29px;
+  text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+    0 0 200px #0072ff;
+  
+}
+.wrapper .btn:focus{
+    outline:none;
+}
